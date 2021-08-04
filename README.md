@@ -24,6 +24,7 @@ This tutorial seeks to compare the effectiveness of the TEMCMC sampler against t
 
 ## Reference(s):
 * A. Lye, A. Cicirello, and E. Patelli (2022). An efficient and robust sampler for Bayesian inference: Transitional Ensemble Markov Chain Monte Carlo. *Mechanical Systems and Signal Processing, 133*(7), 816-832. doi: 
+* A. Lye, A. Cicirello, and E. Patelli (2022). Sampling methods for solving Bayesian model updating problems: A tutorial. *Mechanical Systems and Signal Processing, 159*, 107760. doi: [10.1016/j.ymssp.2021.107760](https://doi.org/10.1016/j.ymssp.2021.107760)
 
 ## Author:
 * Name: Adolphus Lye
