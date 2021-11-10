@@ -23,7 +23,7 @@ See: example_himmelblau.m
 This tutorial seeks to compare the effectiveness of the TEMCMC sampler against the standard [TMCMC](https://doi.org/10.1061/(ASCE)0733-9399(2007)133:7(816)) sampler in identifying the peaks of the 4-peaked Himmelbau's function.
 
 ## Reference(s):
-* A. Lye, A. Cicirello, and E. Patelli (2022). An efficient and robust sampler for Bayesian inference: Transitional Ensemble Markov Chain Monte Carlo. *Mechanical Systems and Signal Processing, 133*(7), 816-832. doi: 
+* A. Lye, A. Cicirello, and E. Patelli (2022). An efficient and robust sampler for Bayesian inference: Transitional Ensemble Markov Chain Monte Carlo. *Mechanical Systems and Signal Processing, 167*, 108471. doi: [10.1016/j.ymssp.2021.108471](https://doi.org/10.1016/j.ymssp.2021.108471)
 * A. Lye, A. Cicirello, and E. Patelli (2021). Sampling methods for solving Bayesian model updating problems: A tutorial. *Mechanical Systems and Signal Processing, 159*, 107760. doi: [10.1016/j.ymssp.2021.107760](https://doi.org/10.1016/j.ymssp.2021.107760)
 
 ## Author:
