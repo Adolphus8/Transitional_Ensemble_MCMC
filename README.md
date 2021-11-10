@@ -1,5 +1,5 @@
 # Transitional Ensemble Markov Chain Monte Carlo
-This repository presents a collection of tutorials (written in MATLAB) which seeks to demonstrate the implementation of the Transitional Ensemble Markov Chain Monte Carlo (TEMCMC) based on the literature by [Lye et. al (2022)](). Currently, 3 tutorials are presented here aimed at allowing users who are new such sampler find their footing around its concept and its workings. The details to these tutorials are as follows:
+This repository presents a collection of tutorials (written in MATLAB) which seeks to demonstrate the implementation of the Transitional Ensemble Markov Chain Monte Carlo (TEMCMC) based on the literature by [Lye et. al (2022)](https://doi.org/10.1016/j.ymssp.2021.108471). Currently, 3 tutorials are presented here aimed at allowing users who are new such sampler find their footing around its concept and its workings. The details to these tutorials are as follows:
 
 ## Tutorials:
 
