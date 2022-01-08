@@ -40,7 +40,7 @@ xlabel('$\Theta^{1}$', 'Interpreter', 'latex'); ylabel('$\Theta^{2}$', 'Interpre
 legend('Scaled P^{j}', 'linewidth', 2)
 set(gca, 'fontsize', 20)
 
-%% ESAI Section: 
+%% AIES Section: 
 
 dim = 2;                     % number of model parameters
 Nwalkers = 2*dim;            % total number of chains of the ensemble
@@ -131,6 +131,56 @@ fun_x2_out(i) = fun_x2(x2(i));
 end
 fun_x1_out = normalize(cumsum(fun_x1_out),'range',[0,1]);
 fun_x2_out = normalize(cumsum(fun_x2_out),'range',[0,1]);
+
+%% Plot the Posterior samples
+
+% Plot figure for Skewed P^{j}:
+figure;
+subplot(1,2,1)
+hold on; box on; grid on; 
+contour(X1,X2,exp(Z1))
+colormap(parula)
+scatter(samples_mh1(:,1), samples_mh1(:,2), 18, 'r', 'filled');
+xlim([-5 5]); ylim([-5 5]);
+xlabel('$\theta^{1}$', 'Interpreter', 'latex'); ylabel('$\theta^{2}$', 'Interpreter', 'latex');
+legend('Skewed P^{j}', 'MH samples', 'linewidth', 2)
+title('MH Samples')
+set(gca, 'fontsize', 20)
+
+subplot(1,2,2)
+hold on; box on; grid on; 
+contour(X1,X2,exp(Z1))
+colormap(parula)
+scatter(samps_aniso_AIES(:,1), samps_aniso_AIES(:,2), 18, 'r', 'filled');
+xlim([-5 5]); ylim([-5 5]);
+xlabel('$\theta^{1}$', 'Interpreter', 'latex'); ylabel('$\theta^{2}$', 'Interpreter', 'latex');
+legend('Skewed P^{j}', 'AIES samples', 'linewidth', 2)
+title('AIES Samples')
+set(gca, 'fontsize', 20)
+
+% Plot figure for Scaled P^{j}:
+figure;
+subplot(1,2,1)
+hold on; box on; grid on; 
+contour(X1,X2,exp(Z2))
+colormap(parula)
+scatter(samples_mh2(:,1), samples_mh2(:,2), 18, 'r', 'filled');
+xlim([-5 5]); ylim([-5 5]);
+xlabel('$\Theta^{1}$', 'Interpreter', 'latex'); ylabel('$\Theta^{2}$', 'Interpreter', 'latex');
+legend('Scaled P^{j}', 'AIES samples', 'linewidth', 2)
+title('MH Samples')
+set(gca, 'fontsize', 20)
+
+subplot(1,2,2)
+hold on; box on; grid on; 
+contour(X1,X2,exp(Z2))
+colormap(parula)
+scatter(samps_iso_AIES(:,1), samps_iso_AIES(:,2), 18, 'r', 'filled');
+xlim([-5 5]); ylim([-5 5]);
+xlabel('$\Theta^{1}$', 'Interpreter', 'latex'); ylabel('$\Theta^{2}$', 'Interpreter', 'latex');
+legend('Scaled P^{j}', 'MH samples', 'linewidth', 2)
+title('AIES Samples')
+set(gca, 'fontsize', 20)
 
 %% Comparing the ECDFs
 e = 0.2;
