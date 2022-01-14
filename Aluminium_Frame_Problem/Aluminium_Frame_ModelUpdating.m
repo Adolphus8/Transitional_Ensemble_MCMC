@@ -65,9 +65,6 @@ plotregression(freq', net(pm'), 'Regression');
 figure; % To plot training state values
 plottrainstate(tr)
 
-figure; % To plot error histogram
-ploterrhist(tr)
-
 %% Load the real experimental data
 
 load('Data_experimental.mat')
