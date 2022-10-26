@@ -59,11 +59,11 @@ ANNtime = toc;
 figure; % To plot training state values
 plotperform(tr)
 
-figure; % To plot linear regression
-plotregression(freq', net(pm'), 'Regression');
+POutputs = net(pm'); POutputs = POutputs';
+trOut = POutputs(tr.trainInd,:); vOut = POutputs(tr.valInd,:); tsOut = POutputs(tr.testInd,:);
+trTarg = freq(tr.trainInd,:); vTarg = freq(tr.valInd,:); tsTarg = freq(tr.testInd,:);
 
-figure; % To plot training state values
-plottrainstate(tr)
+plotregression(trTarg, trOut, 'Train', vTarg, vOut, 'Validation', tsTarg, tsOut, 'Testing', freq, POutputs, 'All')
 
 %% Load the real experimental data
 
